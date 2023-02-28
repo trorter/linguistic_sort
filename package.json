@@ -2,12 +2,16 @@
   "name": "linguistic_sort",
   "version": "1.0.0",
   "description": "linguistic sort for a string array",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
-    "test": "jest --config jestconfig.json"
+    "test": "jest --config jestconfig.json",
+    "prepare" : "npm run build",
+    "prepublishOnly" : "npm test && npm run lint",
+    "preversion" : "npm run lint"
   },
   "files": [
     "lib/**/*"
@@ -17,7 +21,7 @@
     "url": "git+https://github.com/trorter/linguistic_sort.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Andrei Ledovskikh",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/trorter/linguistic_sort/issues"
