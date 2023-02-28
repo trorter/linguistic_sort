@@ -1,1 +1,1 @@
-# linguistic_sort
+# Linguistic sort for a string array

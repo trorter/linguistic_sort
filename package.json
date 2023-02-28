@@ -1,9 +1,10 @@
 {
   "name": "linguistic_sort",
   "version": "1.0.0",
-  "description": "",
+  "description": "linguistic sort for a string array",
   "main": "index.js",
   "scripts": {
+    "build" : "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
