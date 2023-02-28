@@ -1,0 +1,23 @@
+{
+  "name": "linguistic_sort",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trorter/linguistic_sort.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trorter/linguistic_sort/issues"
+  },
+  "homepage": "https://github.com/trorter/linguistic_sort#readme",
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
+}
