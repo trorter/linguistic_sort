@@ -1,5 +1,5 @@
-import { SayHelloTo } from "../main";
+import { SayHelloTo } from '../main';
 
 test('Test SayHelloTo', () => {
-    expect(SayHelloTo('Carl')).toBe('Hello Carl');
+  expect(SayHelloTo('Carl')).toBe('Hello Carl');
 });
