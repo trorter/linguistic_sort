@@ -1,3 +1,1 @@
-export const sayHelloTo = (name: string) => `Hello ${name}`;
-
-console.log(sayHelloTo("111"));
+export const SayHelloTo = (name: string) => `Hello ${name}`;
