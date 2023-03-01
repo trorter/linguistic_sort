@@ -26,10 +26,14 @@ describe('Main tests', () => {
   });
 
   test('Alphabetic with punctuations', () => {
-    expect(linguisticSort([' Ba', '.Aa', '-ba', 'aa'])).toEqual(['.Aa', 'aa', ' Ba', '-ba']);
+    expect(linguisticSort([' Ba', '.Aa', '-ba', 'aa'])).toEqual([' Ba', '-ba', '.Aa', 'aa']);
   });
 
   test('Alphabetic with numbers', () => {
-    expect(linguisticSort(['Ba', 'A1a', 'ba', 'A2a', 'aa'])).toEqual(['A1a', 'A2a', 'aa', 'Ba', 'ba']);
+    expect(linguisticSort(['1Ba', 'A1a', 'ba', 'A2a', 'aa'])).toEqual(['1Ba', 'A1a', 'A2a', 'aa', 'ba']);
+  });
+
+  test('Alphabetic with numbers part 2', () => {
+    expect(linguisticSort(['a011', 'a021', 'a19', 'b'])).toEqual(['a011', 'a021', 'a19', 'b']);
   });
 });
